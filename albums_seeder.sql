@@ -1,4 +1,7 @@
 USE valeria;
+
+# add truncate to delete table:
+TRUNCATE albums;
 #
 # CREATE TABLE albums (
 #     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
