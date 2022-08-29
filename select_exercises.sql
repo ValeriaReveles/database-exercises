@@ -4,6 +4,9 @@ USE valeria;
 # The name of all albums by Pink Floyd.
 SELECT * FROM albums WHERE artist_name = 'Pink Floyd';
 
+# try not to use * since it selects all, don't give customer more than what they need
+SELECT record_name FROM albums WHERE artist_name = 'Pink Floyd';
+
 # The year Sgt. Pepper's Lonely Hearts Club Band was released
 SELECT release_date FROM albums WHERE record_name = 'Sgt. Pepper''s Lonely Hearts Club Band';
 

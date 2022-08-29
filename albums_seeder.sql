@@ -1,6 +1,6 @@
 USE valeria;
 
-# add truncate to delete table:
+# add truncate to delete table records:
 TRUNCATE albums;
 #
 # CREATE TABLE albums (
