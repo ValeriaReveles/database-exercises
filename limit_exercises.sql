@@ -6,6 +6,7 @@ USE employees;
 SELECT DISTINCT last_name FROM employees
 ORDER BY last_name DESC;
 
+
 # Create a query to get the top 5 salaries and display just the employees number from the salaries table. The employee number results should be:
 SELECT emp_no FROM salaries
 ORDER BY salary DESC
