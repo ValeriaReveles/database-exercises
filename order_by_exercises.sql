@@ -26,14 +26,15 @@ ORDER BY last_name, first_name;
 SELECT emp_no, last_name, first_name
 FROM employees
 WHERE last_name LIKE 'E%'
-ORDER BY emp_no ;
+ORDER BY emp_no DESC;
+
 
 
 SELECT emp_no, last_name, first_name
 FROM employees
 WHERE last_name LIKE 'e%'
   AND last_name LIKE '%e'
-ORDER BY emp_no;
+ORDER BY emp_no DESC;
 
 # Now reverse the sort order for both queries and compare results.
 
