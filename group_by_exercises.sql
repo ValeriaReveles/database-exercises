@@ -10,7 +10,7 @@ SELECT last_name, first_name
 FROM employees
 WHERE (last_name LIKE 'e%'
    AND last_name LIKE '%e')
-GROUP BY last_name, first_name;
+GROUP BY last_name;
 
 # Update your previous query to now find unique combinations of first and last name where the last name starts and ends with 'E'. You should get 846 rows.
 SELECT last_name, first_name
@@ -37,7 +37,7 @@ WHERE (last_name LIKE '%q%'
 
 
 # Add a COUNT() to your results and use ORDER BY to make it easier to find employees whose unusual name is shared with others.
-# ORDER BY does not produce output shown in example, using GROUP BY instead does. Instructions unclear.
+# ORDER BY does not produce output shown in example, using GROUP BY instead does. Instructions unclear as GROUP BY orders values already and would not need ORDER BY:
 
 SELECT COUNT(*), last_name
 FROM employees
@@ -45,9 +45,12 @@ WHERE (last_name LIKE '%q%'
     AND last_name NOT LIKE '%qu%')
 GROUP BY last_name;
 
+
 # Update your query for 'Irena', 'Vidya', or 'Maya'. Use count(*) and GROUP BY to find the number of employees for each gender with those names.
 SELECT COUNT(*), gender
 FROM employees
 WHERE first_name IN ('Irena', 'Vidya', 'Maya')
 GROUP BY gender ;
+
+
 
